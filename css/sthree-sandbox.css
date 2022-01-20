@@ -6,11 +6,14 @@ body {
     overflow: hidden;
 }
 
-#app .stage-3d {
+.sthree__3d {
     position: relative;
 }
 
-#app .stage-2d {
+/*------------------
+ * 2D LAYER
+ *-----------------*/
+.sthree__2d {
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -20,9 +23,16 @@ body {
     right: 0;
     user-select: none;
     pointer-events: none;
+
+    color: whitesmoke;
+    font-family: "Courier New", Courier, monospace;
 }
 
-#app .stage-2d .loading-container {
+/* LOADING -----------------------------------*/
+.sthree__2d .__loading-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     pointer-events: all;
     user-select: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -32,14 +42,61 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: whitesmoke;
-    font-family: "Courier New", Courier, monospace;
 }
 
-#app .stage-2d .loading-container h3 {
+.sthree__2d .__loading-container .__progress{
+    width: 100%;
+}
+
+.sthree__2d .__loading-container .__title {
     text-align: center;
 }
 
-#app .stage-2d .loading-container p {
+.sthree__2d .__loading-container .__description {
     font-size: smaller;
+}
+
+/* UI ----------------------------------------*/
+.sthree__2d .__ui-container{
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 15px;
+}
+.sthree__2d .__ui-container .__credits,
+.sthree__2d .__ui-container .__description{
+    text-align: center;
+    white-space: pre-line;
+}
+
+.sthree__2d .__ui-container .__credits a,
+.sthree__2d .__ui-container .__description a,
+.sthree__2d .__ui-container .__git{
+    background-color: #ffffff99;
+}
+
+.sthree__2d .__ui-container .__credits a,
+.sthree__2d .__ui-container .__description a,
+.sthree__2d .__ui-container .__git{
+    pointer-events: auto;
+    font-weight: bold;
+}
+
+.sthree__2d .__ui-container .__git{
+    text-decoration: none;
+    font-size: xxx-large;
+    border-radius: 1em;
+    padding: 0.2em;
+    box-shadow: 1px 1px 1px;
+
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: 0.5em;
+}
+.sthree__2d .__ui-container .__credits a:hover,
+.sthree__2d .__ui-container .__description a:hover,
+.sthree__2d .__ui-container .__git:hover{
+    background: #ffffffee;
 }
