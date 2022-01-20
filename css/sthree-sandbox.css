@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+}
+
+#app .stage-3d {
+    position: relative;
+}
+
+#app .stage-2d {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+#app .stage-2d .loading-container {
+    pointer-events: all;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#app .stage-2d .loading-container h3 {
+    text-align: center;
+}
+
+#app .stage-2d .loading-container p {
+    font-size: smaller;
+}

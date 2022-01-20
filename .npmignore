@@ -1,0 +1,8 @@
+node_modules/
+webpack.config.js
+webpack.prodConfig.js
+Procfile
+.eslintrc
+.editorconfig
+dist/
+.idea/

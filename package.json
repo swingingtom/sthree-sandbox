@@ -1,0 +1,26 @@
+{
+    "name": "sthree-sandbox",
+    "version": "0.0.1",
+    "description": "Scripts to fasten sandboxing three and other libraries relying on it",
+    "module": "src/index.js",
+    "engines": {
+        "node": "x.x.x"
+    },
+    "scripts": {
+        "test": "echo \"No test specified yet\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/swingingtom/sthree-sandbox.git"
+    },
+    "author": "swingingtom",
+    "license": "MIT",
+    "homepage": "https://github.com/swingingtom/sthree-sandbox#readme",
+    "dependencies": {
+    },
+    "peerDependencies": {
+        "lil-gui": "^0.16.0",
+        "three": "^0.132.2",
+        "postprocessing": "^6.23.3"
+    }
+}
