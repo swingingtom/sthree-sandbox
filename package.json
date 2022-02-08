@@ -1,6 +1,6 @@
 {
     "name": "sthree-sandbox",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Scripts to fasten sandboxing three and other libraries relying on it",
     "module": "src/index.js",
     "engines": {
